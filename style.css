@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-image: url("maxresdefault.jpg");
+    background-image: url("moutain.jpg");
     background-attachment: fixed;
     background-position: fixed;
     background-size: cover;
@@ -14,30 +14,97 @@ body {
     padding: 0;
     background-color: black;
     color: rgb(219, 209, 209);
-    position: fixed;
-}
-
-.logo {
-    width: 60px;
-    height: 40px;
-    float: left;
-}
-
-.container ul {
-    float: right;
-}
-
-.container ul li{
-    list-style-type: none;
-    display: inline;
-    position: relative;
 }
 
 a {
     text-decoration: none;
-    display: inline;
+    color: white;
+    font-size: 24px;
+}
+.container:after {
+    content: '';
+    clear: both;
+    display:block;
+}
+.logo {
+    width: 60px;
+    height: 40px;
+    float: right;
 }
 
-.container ul li a {
+.container ul {
+    list-style: none;
+    margin: 0;
+}
+
+.container > ul > li {
+    position: relative;
+    padding: 1.5%;
+    float: left;
+    border-radius: 50%;
+}
+
+.container ul li:hover {
+    background-color: #004b9b;
+}
+
+
+.container ul ul {
+    position: absolute;
+    padding: 0;
+    padding-top: 5px;
+    min-width: 160px;
+    display: none;
+    top: 100%;
+    left: 0;
+}
+
+.container ul ul li {
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.container ul li:hover > ul {
     display: block;
+    background-color: black;
+} 
+
+.nav-short {
+    display: none;
+}
+
+@media (max-width: 780px){
+    .container > ul >li {
+        display: block;
+        float: none;
+        border-radius: 5%;
+    }
+
+    .container ul ul {
+        position: relative;
+        
+    }
+    
+    .container ul li:hover {
+        background-color: rgb(202, 37, 37);
+        
+    }
+    .container ul ul li:hover {
+        background-color: #241564;
+    }
+    .container ul li:hover > ul {
+        background-color: transparent;
+    }
+    /*.container ul li[id ="no-background-color"]:hover{
+        background-color: black;
+    }*/
+    .container ul {
+        text-align: center;
+        display: block;
+    }
+    .logo {
+        display: block;
+        float: none;
+    }
+
 }
