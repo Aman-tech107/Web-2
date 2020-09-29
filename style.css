@@ -153,7 +153,7 @@ a {
     margin-top: 5%;
     padding: 2%;
     background-color: darkcyan;
-    opacity: 0.5;
+    opacity: 1;
     font-size: 24px;
     font-family: fantasy;
 }
@@ -185,4 +185,19 @@ a {
 
 .contact-address-right {
     padding-left: 80%;
+}
+
+@media (max-width: 780px){
+    .contact-company-right{
+        padding-left: 65%;
+    }
+    .contact-email-right{
+        padding-left: 32%;
+    }
+    .contact-number-right{
+        padding-left: 65%;
+    }
+    .contact-address-right{
+        padding-left: 65%;
+    }
 }
