@@ -28,8 +28,16 @@ a {
 }
 .logo {
     width: 60px;
-    height: 40px;
+    height: 20px;
+    margin-right: 5%;
+    align-items: center;
+   
     float: right;
+}
+
+#logo-img {
+    width: 100px;
+    height: 50px;
 }
 
 .container ul {
@@ -45,7 +53,7 @@ a {
 }
 
 .container ul li:hover {
-    background-color: #004b9b;
+    background-color: #202a35;
 }
 
 
@@ -84,13 +92,20 @@ a {
         position: relative;
         
     }
-    
+    .container ul ul li {
+        background-color: rgb(148, 101, 101);
+        border-radius: 0%;
+    }
     .container ul li:hover {
-        background-color: rgb(202, 37, 37);
+        background-color: transparent;
         
     }
+
+    .container ul li a:hover{
+        color: tomato;
+    }
     .container ul ul li:hover {
-        background-color: #241564;
+        background-color: transparent;
     }
     .container ul li:hover > ul {
         background-color: transparent;
@@ -107,4 +122,67 @@ a {
         float: none;
     }
 
+}
+
+.about-content-box {
+    border: 1.5em double chartreuse;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+}
+
+.about-heading {
+    padding: 1.5em;
+    font-size: 30px;
+    color: rgb(228, 4, 4);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.about-content {
+    padding-left: 8%;
+}
+
+.about-content-points {
+    color: darkblue;
+    font-size: 24px;
+}
+
+.contact-details {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    padding: 2%;
+    background-color: darkcyan;
+    opacity: 0.5;
+    font-size: 24px;
+    font-family: fantasy;
+}
+
+.contact-company-left {
+    color: rgb(248, 21, 21);
+}
+
+.contact-company-right {
+    padding-left: 80%;
+}
+.contact-email-left {
+    color: rgb(248, 21, 21);
+}
+
+.contact-email-right {
+    padding-left: 62%;
+}
+.contact-number-left {
+    color: rgb(248, 21, 21);
+}
+
+.contact-number-right {
+    padding-left: 80%;
+}
+.contact-address-left {
+    color: rgb(248, 21, 21);
+}
+
+.contact-address-right {
+    padding-left: 80%;
 }
